@@ -1,15 +1,21 @@
 #Analyzes strInput and calls other functions to process it further
-def analyze(strInput):
-    print "String: %s" % strInput
-    
+def analyze(expression):
+    split = expression.split(' ')
+    print "String: %s" % expression
+
+
+def read(expression):
+    pass
+
 
 if __name__ == '__main__':
-
-    print "Input your expression here"
-    strInput = raw_input(">>> ")
+    prompt = ">>> "
     
-    analyze(strInput)
+    print "Input your expression here"
+    expression = raw_input(prompt)
+    
+    analyze(expression)
 
     #Don't know if this is correct etiquette for exiting
-    print "Exiting program" 
+    print "Exiting program..."
     exit
