@@ -1,12 +1,14 @@
 #Analyzes strInput and calls other functions to process it further
 def analyze(expression):
     split = expression.split(' ')
-    print "String: %s" % expression
-
+    stack = []
+    print "String: %s" % expression, split
+    
+    #Example expression: (1 + 2 + 3 + 4 + 5)
+    #Broken into (1 + 2), prev + 3, prev + 4, prev + 5
 
 def read(expression):
     pass
-
 
 if __name__ == '__main__':
     prompt = ">>> "
